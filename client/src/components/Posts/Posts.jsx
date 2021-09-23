@@ -7,10 +7,6 @@ import useStyles from './styles.jsx'
 const Posts = ({ setCurrentId }) => {
     const posts = useSelector(state => state.posts)
     const classes = useStyles();
-    console.log("posts")
-    console.log(posts)
-    console.log("setCurrid")
-    console.log(setCurrentId)
     return (
         !posts.length ? <CircularProgress /> : (
             <Grid className={classes.container} container alignItems="stretch" spacing={3}>
